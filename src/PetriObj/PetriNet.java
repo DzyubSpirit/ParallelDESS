@@ -14,6 +14,7 @@ import java.util.logging.Logger;
  *
  *  @author Inna V. Stetsenko
  */
+@SuppressWarnings("serial")
 public class PetriNet implements Cloneable, Serializable {
 
     private String name;

@@ -12,6 +12,7 @@ import java.io.Serializable;
  *
  *  @author Inna V. Stetsenko
  */
+@SuppressWarnings("serial")
 public class ArcOut implements Cloneable, Serializable {
 
     private int numP;

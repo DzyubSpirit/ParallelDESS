@@ -11,6 +11,7 @@ import java.io.Serializable;
  *
  *  @author Inna V. Stetsenko
  */
+@SuppressWarnings("serial")
 public class PetriP implements Cloneable, Serializable {
 
     private int mark;

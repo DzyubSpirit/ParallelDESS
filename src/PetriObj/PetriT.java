@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
  *
  *  @author Inna V. Stetsenko
  */
+@SuppressWarnings("serial")
 public class PetriT implements Cloneable, Serializable {
 
     private static double timeModeling = Double.MAX_VALUE - 1;
@@ -196,6 +197,10 @@ public class PetriT implements Cloneable, Serializable {
 
     public double getObservedMin() {
         return observedMin;
+    }
+
+    public ArrayList<Double> getTimeOut() {
+        return timeOut;
     }
 
     /**

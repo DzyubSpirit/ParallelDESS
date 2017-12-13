@@ -103,7 +103,7 @@ public class PetriSim implements Serializable, Runnable {
         priority = 0;
         ListPositionsForStatistica.addAll(Arrays.asList(listP));
         try {
-           f = new RandomAccessFile("G:/simTestData"+numObj+".java", "rw");
+           f = new RandomAccessFile("simTestData"+numObj+".java", "rw");
         } catch (FileNotFoundException ex) {
             Logger.getLogger(PetriSim.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -200,7 +200,7 @@ public class PetriSim implements Serializable, Runnable {
         }
         setTimeMin(min);
         eventMin = event;
-      //  System.out.println(name+ "in eventMin() we have timeMin =  "+timeMin );
+        System.out.println(name+ "in eventMin() we have timeMin =  "+timeMin );
        
     }
 
@@ -681,6 +681,7 @@ public class PetriSim implements Serializable, Runnable {
     public void go(double time) {
 
         while (getTimeCurr() < time && isStopSerial() == false) {
+            System.out.println("before step");
             step();
             if (isStopSerial() == true) {
                 System.out.println("STOP in net  " + this.getName());

@@ -11,6 +11,7 @@ package PetriObj;
  * and also if Petri net has no any position or any transition.
  * @author Inna V. Stetsenko
  */
+@SuppressWarnings("serial")
 public class ExceptionInvalidNetStructure extends Exception {
 
     public ExceptionInvalidNetStructure(String string) {
